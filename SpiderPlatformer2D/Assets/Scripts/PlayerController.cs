@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     //Config
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
+    private float denemeSayısı;//delete this
 
     //Component Referances
     Rigidbody2D rigidBody;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
         if (PlayerHasVelocity())
         {
 
-            transform.localScale = new Vector2(Mathf.Sign(rigidBody.velocity.x), 1f); // return 1 if velocity.x greater than 0 , return -1 if velocity is less than 0;
+            transform.localScale = new Vector2(Mathf.Sign(rigidBody.velocity.x), 2f); // return 1 if velocity.x greater than 0 , return -1 if velocity is less than 0;
         }
         else
         {
