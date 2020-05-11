@@ -9,13 +9,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 589e89d... Cakisma1
-=======
->>>>>>> parent of 589e89d... Cakisma1
     //Component Referances
     Rigidbody2D rigidBody;
     Animator animator;
@@ -67,13 +60,6 @@ public class PlayerController : MonoBehaviour
         {
 
             transform.localScale = new Vector2(Mathf.Sign(rigidBody.velocity.x), 1f); // return 1 if velocity.x greater than 0 , return -1 if velocity is less than 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 589e89d... Cakisma1
-=======
->>>>>>> parent of 589e89d... Cakisma1
         }
         else
         {
